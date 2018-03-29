@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="practicaltest01.eim.systems.cs.pub.ro.practicaltest01.PracticalTest01MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigate_to_sec_activ"
+        android:hint="@string/naviagte_to_secondary_activity"
+        android:layout_gravity="right"
+        />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_gravity="center">
+
+
+        <EditText
+            android:id="@+id/left_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:enabled="false"
+            android:saveEnabled="false"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:width="140dp"
+            />
+
+        <EditText
+            android:id="@+id/right_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:enabled="false"
+            android:saveEnabled="false"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:width="140dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/press_me_left"
+            android:hint="Press me!"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:width="140dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/press_me_right"
+            android:hint="Press me too!"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:width="140dp"
+            />
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text_view"
+        android:hint="nimic"
+        />
+
+</LinearLayout>
+
